@@ -1,0 +1,28 @@
+
+======================================================================
+FINAL MODEL SUMMARY
+======================================================================
+
+Approach: Fine-tuned Sentence Encoder + Logistic + RF Ensemble
+
+Components:
+  1. Fine-tuned sentence-transformers/all-mpnet-base-v2
+     - Contrastive learning (20 pairs/sample, 2 epochs)
+  2. TF-IDF features (3000 word n-grams)
+  3. PCL indicator features (hand-crafted)
+  4. Ensemble: Logistic Regression + Random Forest (equal weights)
+
+Training:
+  - Balance ratio: 1:1.5 (PCL : No PCL)
+  - Threshold: 0.4
+
+Performance (from loaded model):
+  Dev Set:
+    F1:        0.6485
+    Precision: 0.6390
+    Recall:    0.6583
+
+Predictions:
+  Dev:  205 PCL / 2093 total
+  Test: 330 PCL / 3832 total
+======================================================================

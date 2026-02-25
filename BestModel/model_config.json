@@ -1,0 +1,14 @@
+{
+  "approach": "Fine-tuned Sentence Encoder + Logistic + RF Ensemble",
+  "base_model": "sentence-transformers/all-mpnet-base-v2",
+  "threshold": 0.4,
+  "balance_ratio": 1.5,
+  "ensemble_classifiers": [
+    "logistic",
+    "rf"
+  ],
+  "all_classifiers": [
+    "logistic",
+    "rf"
+  ]
+}
