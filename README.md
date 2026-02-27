@@ -43,7 +43,7 @@ Contains the final prediction files in the required submission format (one predi
 | File | Description |
 |---|---|
 | [`Predictions/dev.txt`](Predictions/dev.txt) | Predictions on the official dev set (2,093 lines) |
-| [`Predictions/test.txt`](`Predictions/test.txt`) | Predictions on the official test set (3,832 lines) |
+| [`Predictions/test.txt`](Predictions/test.txt) | Predictions on the official test set (3,832 lines) |
 
 ---
 
